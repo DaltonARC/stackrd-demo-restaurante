@@ -120,7 +120,7 @@ footer a{color:#fff;font-weight:600}
 </head>
 <body>
 <a class="skip" href="#servicios">Saltar al contenido</a>
-<div class="demo">Página de demostración de un negocio ficticio. <a data-wa="Hola, quiero una página web para mi negocio." href="#" target="_blank" rel="noopener">¿Quieres una así para tu negocio?</a></div>
+<div class="demo">Página de demostración de un negocio ficticio. <a data-wa="Hola, quiero una página web para mi negocio." href="https://wa.me/18293390257?text=%5BDEMO%20Saz%C3%B3n%20de%20la%20Loma%5D%20Hola%2C%20quiero%20una%20p%C3%A1gina%20web%20para%20mi%20negocio." target="_blank" rel="noopener">¿Quieres una así para tu negocio?</a></div>
 <nav><div class="wrap">
   <a class="logo" href="#"><span>🍲</span>Sazón de la Loma</a>
   <ul><li><a href="#servicios">Menú</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contacto</a></li></ul>
@@ -182,7 +182,7 @@ footer a{color:#fff;font-weight:600}
 <footer>© Sazón de la Loma · Santiago de los Caballeros · Negocio ficticio</footer>
 
 <div class="credito">Demo creada por <a href="https://daltonarc.github.io/stackrd-web/" target="_blank" rel="noopener">StackRD</a></div>
-<a class="wa-float" data-wa="Hola, quiero información." href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.7-5.8C5.1 9.9 10 5.2 16 5.2s10.9 4.7 10.9 10.6S22 26.4 16 26.4zm6-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></a>
+<a class="wa-float" data-wa="Hola, quiero información." href="https://wa.me/18293390257?text=%5BDEMO%20Saz%C3%B3n%20de%20la%20Loma%5D%20Hola%2C%20quiero%20informaci%C3%B3n." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.7-5.8C5.1 9.9 10 5.2 16 5.2s10.9 4.7 10.9 10.6S22 26.4 16 26.4zm6-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></a>
 <script src="config.js"></script>
 <script src="demo.js"></script>
 <script>(function(){
@@ -191,11 +191,12 @@ var K='sazon-pedido',c=guardado.leer(K)||{};
 Object.keys(c).forEach(function(k){if(!M[k]||!(c[k]>0))delete c[k];});
 var $=function(i){return document.getElementById(i);};
 function tot(){var n=0,t=0;Object.keys(c).forEach(function(k){n+=c[k];t+=c[k]*M[k][1];});return{n:n,t:t};}
+function lim(v){return v.trim().replace(/[\s.,;:!?]+$/,'');}
 function msg(){
   var l=Object.keys(c).map(function(k){return c[k]+' x '+M[k][0]+' ('+fmt(c[k]*M[k][1])+')';}).join(', ');
   var s='Hola, quiero hacer este pedido: '+l+'. Total: '+fmt(tot().t)+'. Tipo: '+$('p-tipo').value+'.';
-  if($('p-nombre').value.trim())s+=' Nombre: '+$('p-nombre').value.trim()+'.';
-  if($('p-dir').value.trim())s+=' Nota: '+$('p-dir').value.trim()+'.';
+  var nb=lim($('p-nombre').value);if(nb)s+=' Nombre: '+nb+'.';
+  var nt=lim($('p-dir').value);if(nt)s+=' Nota: '+nt+'.';
   return s;
 }
 function render(){

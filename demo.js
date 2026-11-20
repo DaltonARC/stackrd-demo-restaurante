@@ -16,7 +16,11 @@
       e.preventDefault();
       if (!form.reportValidity()) return;
       var d = {};
-      new FormData(form).forEach(function (v, k) { d[k] = String(v).trim(); });
+      new FormData(form).forEach(function (v, k) {
+        var el = form.elements[k];
+        v = String(v).trim();
+        d[k] = el && el.tagName === 'SELECT' ? v : v.replace(/[\s.,;:!?]+$/, '');
+      });
       var url = wa(armar(d));
       form.dataset.enlace = url;
       window.open(url, '_blank', 'noopener');
