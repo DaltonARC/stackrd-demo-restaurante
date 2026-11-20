@@ -5,8 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sazón de la Loma | Santiago de los Caballeros</title>
 <meta name="description" content="Almuerzos del día, sancocho los fines de semana y delivery en Santiago. Pide por WhatsApp en un minuto.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://daltonarc.github.io/stackrd-demo-restaurante/">
+<meta property="og:title" content="Sazón de la Loma | Santiago de los Caballeros">
+<meta property="og:description" content="Almuerzos del día, sancocho los fines de semana y delivery en Santiago. Pide por WhatsApp en un minuto.">
+<meta property="og:url" content="https://daltonarc.github.io/stackrd-demo-restaurante/">
+<meta property="og:image" content="https://daltonarc.github.io/stackrd-demo-restaurante/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sazón de la Loma, demo de sitio web">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_DO">
+<meta property="og:site_name" content="Sazón de la Loma">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#7a2e12">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="demo.css">
 <style>
 :root{
   --primario: #7a2e12;
@@ -98,14 +114,17 @@ footer a{color:#fff;font-weight:600}
   .flotante{width:52px;height:52px}
   .flotante svg{width:26px;height:26px}
 }
+:root{--d-acc:#e0672c;--d-acc-tx:#2a1a12;--d-ink:#2a1a12;--d-bg:#fff8f0;--d-card:#fff;--d-line:#8a6a55;--d-title:var(--titulo);--d-body:Inter,system-ui,sans-serif}
+.btn{color:#2a1a12}.precio{color:#a6431a}.info small{opacity:.85}.intro{opacity:.85}.card p{opacity:.85}.gal h2{font-family:var(--titulo)}.card .add{margin-top:6px}
 </style>
 </head>
 <body>
-<div class="demo">Página de demostración hecha por StackRD. <a href="https://wa.me/18293390257?text=Hola%2C%20quiero%20una%20p%C3%A1gina%20web%20para%20mi%20negocio." target="_blank" rel="noopener">¿Quieres una así para tu negocio?</a></div>
+<a class="skip" href="#servicios">Saltar al contenido</a>
+<div class="demo">Página de demostración de un negocio ficticio. <a data-wa="Hola, quiero una página web para mi negocio." href="#" target="_blank" rel="noopener">¿Quieres una así para tu negocio?</a></div>
 <nav><div class="wrap">
   <a class="logo" href="#"><span>🍲</span>Sazón de la Loma</a>
   <ul><li><a href="#servicios">Menú</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contacto</a></li></ul>
-  <a class="btn" href="https://wa.me/18293390257?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20demostraci%C3%B3n%20de%20Saz%C3%B3n%20de%20la%20Loma%20y%20quiero%20una%20para%20mi%20negocio." target="_blank" rel="noopener">Pedir por WhatsApp</a>
+  <a class="btn" href="#servicios">Hacer mi pedido</a>
 </div></nav>
 
 <header class="hero"><div class="wrap">
@@ -114,7 +133,7 @@ footer a{color:#fff;font-weight:600}
     <h1>Comida criolla como la de casa</h1>
     <p>Almuerzos del día, sancocho los fines de semana y delivery en Santiago. Pide por WhatsApp en un minuto.</p>
     <div class="acciones">
-      <a class="btn" href="https://wa.me/18293390257?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20demostraci%C3%B3n%20de%20Saz%C3%B3n%20de%20la%20Loma%20y%20quiero%20una%20para%20mi%20negocio." target="_blank" rel="noopener">Pedir por WhatsApp</a>
+      <a class="btn" href="#servicios">Hacer mi pedido</a>
       <a class="btn sec" href="#servicios">Ver menú</a>
     </div>
     <div class="datos"><div><b>11–4</b>Almuerzos</div><div><b>Delivery</b>en Santiago</div><div><b>Pago</b>efectivo o transferencia</div></div>
@@ -125,9 +144,22 @@ footer a{color:#fff;font-weight:600}
 <section id="servicios"><div class="wrap">
   <h2>Menú</h2>
   <p class="intro">Platos del día preparados en el momento. Pregunta por el especial de hoy.</p>
-  <div class="grid"><div class="card"><div class="ico">🍛</div><h3>La Bandera</h3><p>Arroz, habichuelas, carne guisada y ensalada.</p><div class="precio">RD$275</div></div><div class="card"><div class="ico">🍲</div><h3>Sancocho</h3><p>Sábados y domingos, con arroz y aguacate.</p><div class="precio">RD$350</div></div><div class="card"><div class="ico">🍗</div><h3>Pollo al horno</h3><p>Con moro de guandules y tostones.</p><div class="precio">RD$300</div></div><div class="card"><div class="ico">🥤</div><h3>Jugos naturales</h3><p>Chinola, limón o tamarindo.</p><div class="precio">RD$100</div></div></div>
+  <div class="grid"><div class="card"><div class="ico">🍛</div><h3>La Bandera</h3><p>Arroz, habichuelas, carne guisada y ensalada.</p><div class="precio">RD$275</div><button type="button" class="add" data-id="bandera" aria-label="Agregar La Bandera al pedido">Agregar</button></div><div class="card"><div class="ico">🍲</div><h3>Sancocho</h3><p>Sábados y domingos, con arroz y aguacate.</p><div class="precio">RD$350</div><button type="button" class="add" data-id="sancocho" aria-label="Agregar Sancocho al pedido">Agregar</button></div><div class="card"><div class="ico">🍗</div><h3>Pollo al horno</h3><p>Con moro de guandules y tostones.</p><div class="precio">RD$300</div><button type="button" class="add" data-id="pollo" aria-label="Agregar Pollo al horno al pedido">Agregar</button></div><div class="card"><div class="ico">🥤</div><h3>Jugos naturales</h3><p>Chinola, limón o tamarindo.</p><div class="precio">RD$100</div><button type="button" class="add" data-id="jugo" aria-label="Agregar Jugos naturales al pedido">Agregar</button></div></div>
 </div></section>
 
+<section class="gal"><div class="wrap"><h2>Así se cocina en la Loma</h2><ul><li><figure><svg viewBox="0 0 300 220" role="img" aria-label="Ilustración de un plato con arroz, habichuelas y carne" focusable="false"><rect width="300" height="220" fill="#fff8f0"/><ellipse cx="150" cy="120" rx="110" ry="70" fill="#fff"/><ellipse cx="150" cy="120" rx="110" ry="70" fill="none" stroke="#7a2e12" stroke-width="5"/><path d="M80 120a50 50 0 0 1 70-40v80a50 50 0 0 1-70-40z" fill="#f4ecd8"/><path d="M150 80a50 50 0 0 1 70 40 50 50 0 0 1-70 40z" fill="#7a2e12"/><ellipse cx="150" cy="120" rx="26" ry="20" fill="#b65a2a"/><circle cx="125" cy="165" r="10" fill="#4f8a3c"/><circle cx="175" cy="170" r="10" fill="#4f8a3c"/></svg><figcaption>La Bandera</figcaption></figure></li><li><figure><svg viewBox="0 0 300 220" role="img" aria-label="Ilustración de una olla humeante de sancocho" focusable="false"><rect width="300" height="220" fill="#f1e1cf"/><path d="M70 100h160v40a60 60 0 0 1-60 60h-40a60 60 0 0 1-60-60z" fill="#7a2e12"/><rect x="60" y="92" width="180" height="14" rx="7" fill="#e0672c"/><rect x="40" y="110" width="22" height="10" rx="5" fill="#7a2e12"/><rect x="238" y="110" width="22" height="10" rx="5" fill="#7a2e12"/><path d="M110 76c-10-14 10-18 0-34M150 76c-10-14 10-18 0-34M190 76c-10-14 10-18 0-34" stroke="#b65a2a" stroke-width="6" fill="none" stroke-linecap="round"/></svg><figcaption>El sancocho</figcaption></figure></li><li><figure><svg viewBox="0 0 300 220" role="img" aria-label="Ilustración de un muslo de pollo asado con tostones" focusable="false"><rect width="300" height="220" fill="#fff8f0"/><ellipse cx="150" cy="170" rx="120" ry="30" fill="#f1e1cf"/><path d="M90 130c0-40 40-70 80-60s50 50 20 70-70 20-100-10z" fill="#c9792b"/><rect x="165" y="60" width="18" height="40" rx="9" fill="#f6ead7" transform="rotate(30 174 80)"/><circle cx="205" cy="62" r="11" fill="#f6ead7"/><circle cx="224" cy="150" r="22" fill="#e6c25c"/><circle cx="70" cy="155" r="20" fill="#e6c25c"/></svg><figcaption>Pollo al horno</figcaption></figure></li><li><figure><svg viewBox="0 0 300 220" role="img" aria-label="Ilustración de dos vasos de jugo con sombrilla" focusable="false"><rect width="300" height="220" fill="#f1e1cf"/><path d="M80 80h60l-8 100H88z" fill="#f4a623"/><path d="M164 70h60l-8 110h-44z" fill="#d94b2b"/><path d="M80 80h60l-2 18H82z" fill="#fff" opacity=".6"/><path d="M164 70h60l-2 18h-56z" fill="#fff" opacity=".6"/><path d="M120 76l22-40" stroke="#4f8a3c" stroke-width="5" stroke-linecap="round"/><circle cx="196" cy="62" r="16" fill="#8bc34a"/><rect x="70" y="180" width="170" height="10" rx="5" fill="#b65a2a"/></svg><figcaption>Jugos naturales</figcaption></figure></li></ul></div></section>
+<div class="cbar" id="cbar"><div class="in"><span class="t" id="cbar-t" aria-live="polite"></span><button type="button" id="cbar-b">Ver pedido</button></div></div>
+<dialog class="cdlg" id="cdlg" aria-labelledby="cdlg-h"><div class="cont">
+<h2 id="cdlg-h">Tu pedido <button type="button" id="cdlg-x" aria-label="Cerrar">&times;</button></h2>
+<div id="clineas"></div>
+<div class="ctot"><span>Total</span><span id="ctot">RD$0</span></div>
+<label for="p-nombre">Tu nombre</label><input id="p-nombre" autocomplete="name">
+<label for="p-tipo">Cómo lo quieres</label>
+<select id="p-tipo" style="width:100%;font:inherit;font-size:16px;min-height:48px;border:2px solid var(--d-line);border-radius:12px;padding:10px 12px;background:#fff;color:#111"><option>Delivery</option><option>Paso a buscarlo</option></select>
+<label for="p-dir">Dirección o nota (opcional)</label><textarea id="p-dir" rows="2"></textarea>
+<a class="enviar" id="cenviar" href="#" target="_blank" rel="noopener" aria-disabled="true">Enviar pedido por WhatsApp</a>
+<p class="nota">Se abre WhatsApp con tu pedido listo. Negocio ficticio, demostración.</p>
+</div></dialog>
 <section id="nosotros" class="nosotros"><div class="wrap">
   <div>
     <h2>Sabor de siempre, servicio rápido</h2>
@@ -139,16 +171,52 @@ footer a{color:#fff;font-weight:600}
 <section id="contacto" class="contacto"><div class="wrap">
   <div class="info">
     <h2>Visítanos</h2>
-    <div><small>Dirección</small><b>Av. Central, Santiago de los Caballeros</b></div>
+    <div><small>Dirección</small><b>Av. Juan Pablo Duarte, Santiago de los Caballeros</b></div>
     <div><small>Horario</small><b>Lunes a domingo, 11:00 a.m. – 4:00 p.m.</b></div>
     <div><small>WhatsApp</small><b>(829) 000-0000</b></div>
-    <a class="btn" href="https://wa.me/18293390257?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20demostraci%C3%B3n%20de%20Saz%C3%B3n%20de%20la%20Loma%20y%20quiero%20una%20para%20mi%20negocio." target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    <a class="btn" href="#servicios">Hacer mi pedido</a>
   </div>
-  <iframe loading="lazy" src="https://www.google.com/maps?q=Santiago%20de%20los%20Caballeros%2C%20Rep%C3%BAblica%20Dominicana&output=embed" title="Mapa"></iframe>
+  <iframe loading="lazy" src="https://www.google.com/maps?q=Av.%20Juan%20Pablo%20Duarte%2C%20Santiago%20de%20los%20Caballeros&amp;output=embed" title="Mapa de Santiago de los Caballeros" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div></section>
 
-<footer>© Sazón de la Loma · Santiago de los Caballeros &nbsp;|&nbsp; Página hecha por <a href="https://wa.me/18293390257?text=Hola%2C%20vi%20una%20p%C3%A1gina%20hecha%20por%20StackRD%20y%20quiero%20una." target="_blank" rel="noopener">StackRD</a></footer>
+<footer>© Sazón de la Loma · Santiago de los Caballeros · Negocio ficticio</footer>
 
-<a class="flotante" href="https://wa.me/18293390257?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20demostraci%C3%B3n%20de%20Saz%C3%B3n%20de%20la%20Loma%20y%20quiero%20una%20para%20mi%20negocio." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.7-5.8C5.1 9.9 10 5.2 16 5.2s10.9 4.7 10.9 10.6S22 26.4 16 26.4zm6-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></a>
+<div class="credito">Demo creada por <a href="https://daltonarc.github.io/stackrd-web/" target="_blank" rel="noopener">StackRD</a></div>
+<a class="wa-float" data-wa="Hola, quiero información." href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.7-5.8C5.1 9.9 10 5.2 16 5.2s10.9 4.7 10.9 10.6S22 26.4 16 26.4zm6-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></a>
+<script src="config.js"></script>
+<script src="demo.js"></script>
+<script>(function(){
+var M={bandera:['La Bandera',275],sancocho:['Sancocho',350],pollo:['Pollo al horno',300],jugo:['Jugos naturales',100]};
+var K='sazon-pedido',c=guardado.leer(K)||{};
+Object.keys(c).forEach(function(k){if(!M[k]||!(c[k]>0))delete c[k];});
+var $=function(i){return document.getElementById(i);};
+function tot(){var n=0,t=0;Object.keys(c).forEach(function(k){n+=c[k];t+=c[k]*M[k][1];});return{n:n,t:t};}
+function msg(){
+  var l=Object.keys(c).map(function(k){return c[k]+' x '+M[k][0]+' ('+fmt(c[k]*M[k][1])+')';}).join(', ');
+  var s='Hola, quiero hacer este pedido: '+l+'. Total: '+fmt(tot().t)+'. Tipo: '+$('p-tipo').value+'.';
+  if($('p-nombre').value.trim())s+=' Nombre: '+$('p-nombre').value.trim()+'.';
+  if($('p-dir').value.trim())s+=' Nota: '+$('p-dir').value.trim()+'.';
+  return s;
+}
+function render(){
+  var r=tot();guardado.escribir(K,c);
+  document.body.classList.toggle('con-carro',r.n>0);
+  $('cbar').classList.toggle('on',r.n>0);
+  $('cbar-t').textContent=r.n+(r.n===1?' artículo · ':' artículos · ')+fmt(r.t);
+  document.querySelectorAll('.add').forEach(function(b){var q=c[b.dataset.id]||0;b.classList.toggle('en',q>0);b.textContent=q>0?'En el pedido ('+q+')':'Agregar';});
+  $('clineas').innerHTML=Object.keys(c).map(function(k){return '<div class="clin"><div class="nm">'+M[k][0]+'<small>'+fmt(M[k][1])+' c/u</small></div><div class="cctl"><button type="button" data-d="-1" data-k="'+k+'" aria-label="Quitar uno de '+M[k][0]+'">&minus;</button><b>'+c[k]+'</b><button type="button" data-d="1" data-k="'+k+'" aria-label="Agregar uno de '+M[k][0]+'">+</button></div></div>';}).join('');
+  $('ctot').textContent=fmt(r.t);
+  var e=$('cenviar');e.setAttribute('aria-disabled',r.n>0?'false':'true');
+  e.href=r.n>0?wa(msg()):'#';
+  if(r.n===0&&$('cdlg').open)$('cdlg').close();
+}
+document.querySelectorAll('.add').forEach(function(b){b.addEventListener('click',function(){c[b.dataset.id]=(c[b.dataset.id]||0)+1;render();});});
+$('clineas').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.dataset.k;c[k]=(c[k]||0)+Number(b.dataset.d);if(c[k]<=0)delete c[k];render();});
+['p-nombre','p-tipo','p-dir'].forEach(function(i){$(i).addEventListener('input',render);});
+$('cbar-b').addEventListener('click',function(){$('cdlg').showModal();});
+$('cdlg-x').addEventListener('click',function(){$('cdlg').close();});
+$('cdlg').addEventListener('click',function(e){if(e.target===$('cdlg'))$('cdlg').close();});
+render();
+})();</script>
 </body>
 </html>
